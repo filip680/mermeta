@@ -297,7 +297,7 @@ footer .logo .logo2 {
 }
 
 .hiddenBar {
-    display: none;
+    display:none;
 }
 
 .hiddenBar span {
@@ -310,6 +310,54 @@ footer .logo .logo2 {
 
 .hiddenBar span:nth-child(2) {
     width: 15px;
+}
+
+.hiddenMenu {
+    display:none;
+    background-color: black;
+    color: white;
+    width: 100%;
+    position: absolute;
+    top: 90px;
+
+}
+
+.hiddenMenu ul {
+    list-style: none;
+}
+
+.hiddenMenu a {
+    padding: 15px 25px;
+    display: block;
+    text-decoration: none;
+    color:white;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 350;
+}
+
+.hiddenMenu a:first-child {
+    padding-top: 0;
+}
+
+.hiddenMenu a:last-child {
+    padding-bottom: 0;
+}
+
+.close {
+    display: none;
+}
+
+.close span{
+    transform: rotateZ(45deg);
+    display:block;
+    background-color:white;
+    width: 25px;
+    height:2px;
+}
+
+.close span:last-child {
+    transform: rotateZ(135deg);
 }
 
 @media(max-width:1199px){
