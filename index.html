@@ -23,21 +23,27 @@
         </div>
         <div id="toggle3" onclick="toggleMenu()" class="close">
             <a href="#">
-                <span></span>
+                <span style="margin-bottom: -2px;"></span>
                 <span></span>
             </a>
         </div>
         <div id="toggle2" class="hiddenMenu">
             <ul>
                 <a href="#"><li>Uređenje enterijera</li></a>
-                <a><li>Ekskluzivni nameštaj</li></a>
-                    <ul class="dropdown">
-                        <li><a>Kontakt</a></li>
-                        <li><a>Kontakt</a></li>
-                        <li><a>Kontakt</a></li>
-                        <li><a>Kontakt</a></li>
+                <a>
+                    <li>Ekskluzivni nameštaj</li>
+                    <div class="arrow" onclick="toggleDropdown()">
+                        <span></span>
+                        <span></span>
+                    </div>
+                </a>
+                    <ul class="dropdown" id="toggle4">
+                        <li><a href="#">Kontakt</a></li>
+                        <li><a href="#">Kontakt</a></li>
+                        <li><a href="#">Kontakt</a></li>
+                        <li><a href="#">Kontakt</a></li>
                     </ul>
-                </li>
+                
                 <a href="#"><li>Materijali</li></a>
                 <a href="#"><li>Brendovi</li></a>
                 <a href="#"><li>Smart Home</li></a>

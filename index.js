@@ -17,3 +17,8 @@ function toggleDisplayBlock(el){
    el = document.getElementById("toggle3");
    toggleDisplayBlock(el);
   }
+
+  function toggleDropdown() {
+    el = document.getElementById("toggle4");
+    toggleDisplayBlock(el);
+  }

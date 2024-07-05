@@ -67,9 +67,101 @@ h4 {
     text-underline-offset: 10px;
 }
 
-.dropdown {
+.hiddenBar {
+    display:none;
+}
+
+.hiddenBar span {
+    display: block;
+    background-color: white;
+    height: 2px;
+    width: 20px;
+    margin-bottom: 5px;
+}
+
+.hiddenBar span:nth-child(2) {
+    width: 15px;
+}
+
+.hiddenMenu {
+    display:none;
+    background-color: black;
+    color: white;
+    width: 100%;
+    position: absolute;
+    top: 90px;
+
+}
+
+.hiddenMenu ul {
+    list-style: none;
+}
+
+.hiddenMenu a {
+    padding: 15px 25px;
+    display: flex;
+    text-decoration: none;
+    color:white;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 350;
+}
+
+.hiddenMenu a:first-child {
+    padding-top: 0;
+}
+
+.hiddenMenu a:last-child {
+    padding-bottom: 0;
+}
+
+.close {
     display: none;
-    color: gray;
+}
+
+.close span{
+    transform: rotateZ(45deg);
+    display:block;
+    background-color:white;
+    width: 25px;
+    height:2px;
+}
+
+.close span:last-child {
+    transform: rotateZ(135deg);
+}
+
+.arrow {
+    margin-top: 8px;
+    margin-left: 8px;
+}
+
+.arrow span {
+    display: block;
+    background-color: white;
+    width: 10px;
+    height: 2px;
+    transform: rotateZ(45deg);
+}
+
+.arrow span:last-child {
+    margin-left: 7px;
+    margin-top: -2px;
+    transform: rotateZ(-45deg);
+}
+
+.dropdown {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    display: none;
+    background-color: white;
+}
+
+.hiddenMenu .dropdown a {
+    display: block;
+    color:black;
+    text-transform: capitalize;
+    padding: 8px 35px;
 }
 
 .hero {
@@ -294,70 +386,6 @@ footer .logo .logo2 {
 
 .col {
     float: left;
-}
-
-.hiddenBar {
-    display:none;
-}
-
-.hiddenBar span {
-    display: block;
-    background-color: white;
-    height: 2px;
-    width: 20px;
-    margin-bottom: 5px;
-}
-
-.hiddenBar span:nth-child(2) {
-    width: 15px;
-}
-
-.hiddenMenu {
-    display:none;
-    background-color: black;
-    color: white;
-    width: 100%;
-    position: absolute;
-    top: 90px;
-
-}
-
-.hiddenMenu ul {
-    list-style: none;
-}
-
-.hiddenMenu a {
-    padding: 15px 25px;
-    display: block;
-    text-decoration: none;
-    color:white;
-    text-transform: uppercase;
-    font-size: 16px;
-    font-weight: 350;
-}
-
-.hiddenMenu a:first-child {
-    padding-top: 0;
-}
-
-.hiddenMenu a:last-child {
-    padding-bottom: 0;
-}
-
-.close {
-    display: none;
-}
-
-.close span{
-    transform: rotateZ(45deg);
-    display:block;
-    background-color:white;
-    width: 25px;
-    height:2px;
-}
-
-.close span:last-child {
-    transform: rotateZ(135deg);
 }
 
 @media(max-width:1199px){
