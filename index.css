@@ -53,6 +53,8 @@ h4 {
     width: 200px;
 }
 
+/*menu*/
+
 .menu > ul {
     color: white;
     list-style: none;
@@ -62,10 +64,65 @@ h4 {
     font-size: 17px;
 }
 
-.menu > ul > li:hover {
+.menu > ul li {
+    position: relative;
+}
+
+/*.menu > ul > li:hover {
     text-decoration: underline;
     text-underline-offset: 10px;
+}*/
+
+.underline {
+    display: none;
+    height: 1px;
+    background-color: white;
+    position: absolute;
+    bottom: -8px;
 }
+
+.menu > ul > li:hover .underline {
+    display: block;
+    -webkit-animation: line .75s 1 forwards;
+    -moz-animation: line .75s 1 forwards;
+    -o-animation: line .75s 1 forwards;
+    animation: line .75s 1 forwards;
+}
+
+@-webkit-keyframes line {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+  @-moz-keyframes line {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+  @-o-keyframes line {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+  @keyframes line {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+
+/*hiddenBar*/
 
 .hiddenBar {
     display:none;
