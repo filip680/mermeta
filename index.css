@@ -83,10 +83,13 @@ h4 {
 
 .menu > ul > li:hover .underline {
     display: block;
-    -webkit-animation: line .75s 1 forwards;
-    -moz-animation: line .75s 1 forwards;
-    -o-animation: line .75s 1 forwards;
-    animation: line .75s 1 forwards;
+    -webkit-animation: line .75s forwards;
+    -moz-animation: line .75s forwards;
+    -o-animation: line .75s forwards;
+    animation: line .75s forwards;
+    /*animation-name: line;
+    animation-duration: 0.75s;
+    animation-direction: forwards;*/
 }
 
 @-webkit-keyframes line {
@@ -259,14 +262,14 @@ h4 {
 
 .description {
     position: relative;
-    height: 30vw;
+    height: 33vw;
     width: 33.33%;
     color: white;
     text-align: center;
 }
 
 .description img {
-    height: 100%;
+    height: fit-content;
 }
 
 .box {
@@ -463,5 +466,35 @@ footer .logo .logo2 {
     .hiddenBar {
         display: block;
         cursor: pointer;
+    }
+}
+
+@media(max-width:767px){
+    .imgContainer {
+        flex-direction: column;
+    }
+
+    .description {
+        width: 100%;
+        box-sizing: border-box;
+        height: fit-content;
+    }
+
+    .product {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    
+    .product>div {
+        width:100%;
+        text-align: center;
+    }
+
+    .product>div:last-child {
+        height:33vw;
+    }
+
+    .streak {
+        margin:auto;
     }
 }
