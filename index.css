@@ -262,14 +262,13 @@ h4 {
 
 .description {
     position: relative;
-    height: 33vw;
+    max-height: 500px;
+    overflow: hidden;
+    /*overflow-x:hidden;
+    overflow-y: hidden;*/
     width: 33.33%;
     color: white;
     text-align: center;
-}
-
-.description img {
-    height: fit-content;
 }
 
 .box {
@@ -430,7 +429,20 @@ footer .logo .logo2 {
 }
 
 .contact p {
-    padding-top: 12px;
+    margin-top: -40px;
+    margin-left: 50px;
+}
+
+.contact a:first-of-type::before {
+    content: url("images/location.JPG");
+}
+
+.contact a:nth-of-type(2)::before {
+    content: url("images/phone.JPG");
+}
+
+.contact a:last-of-type::before {
+    content: url("images/mail.JPG");
 }
 
 .copyright {
@@ -469,6 +481,13 @@ footer .logo .logo2 {
     }
 }
 
+@media(max-width: 950px) {
+    .box h3 {
+        margin-top: 0;
+        margin-bottom: 15px;
+    }
+}
+
 @media(max-width:767px){
     .imgContainer {
         flex-direction: column;
@@ -496,5 +515,14 @@ footer .logo .logo2 {
 
     .streak {
         margin:auto;
+    }
+
+    .box h3 {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .description img {
+        width: 100%;
     }
 }
