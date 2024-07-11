@@ -1,5 +1,6 @@
 html {
     height: 100%;
+    overflow-x: hidden;
 }
 
 body {
@@ -61,7 +62,7 @@ h4 {
     text-transform: uppercase;
     display: flex;
     gap: 1.5rem;
-    font-size: 17px;
+    font-size: 1.2vw;
 }
 
 .menu > ul li {
@@ -248,7 +249,7 @@ h4 {
 }
 
 .info h1 {
-    color: red;
+    color: white;
     font-size: 48px;
     font-weight: 200;
     letter-spacing: 2px;
@@ -488,7 +489,17 @@ footer .logo .logo2 {
     }
 }
 
-@media(max-width:767px){
+@media(max-width:820px) {
+   .product {
+        padding: 0;
+    }
+
+    .container {
+        margin: 40px;
+    }
+}
+
+@media(max-width:767px) {
     .imgContainer {
         flex-direction: column;
     }
@@ -503,7 +514,6 @@ footer .logo .logo2 {
         flex-direction: column;
         gap: 2rem;
     }
-    
     .product>div {
         width:100%;
         text-align: center;
@@ -524,5 +534,62 @@ footer .logo .logo2 {
 
     .description img {
         width: 100%;
+    }
+
+    .hero {
+        max-height: 600px;
+        overflow: hidden;
+        text-align: center;
+    }
+
+    .hero .responsive {
+        width: auto;
+    }
+
+    .hero2 {
+        text-align:center;
+    }
+
+    .hero2>div{
+        margin: auto;
+        width: 100%;
+    }
+
+    .brands {
+        flex-direction: column;
+    }
+
+    .brands a {
+        width: 100%;
+    }
+
+    .col {
+        float: none;
+    }
+
+    footer .logo {
+        width: 100%;
+        text-align: center;
+        padding-right: 0;
+    }
+
+    .links {
+        width: 100%;
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .contact {
+        width: 100%;
+        text-align: center;
+    }
+
+    .contact p {
+        margin-left: 0;
+        margin-top: 0;
+    }
+
+    footer .container {
+        margin: 0;
     }
 }
